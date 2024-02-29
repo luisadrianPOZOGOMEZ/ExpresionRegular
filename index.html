@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+
+    <title>Validar RFC</title>
+</head>
+<body>
+    <h1>Validar CURP</h2>
+    
+    <div class="container-div1">
+        <div class="box-er">
+            <label for="cadenaInput2">Ingrese una cadena de P(ogl)*</label>
+            <div class="wrapper_input">
+                <input type="text" id="cadenaInput2" >
+                <button onclick="ER()">Validar</button>
+            </div>
+            
+            <p id="result"></p>
+        </div>
+    </div>
+
+    <script type="module">
+        import { ER } from "./main.js";
+
+        window.ER = ER;
+    </script>
+</body>
+</html>
